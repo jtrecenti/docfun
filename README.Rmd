@@ -1,0 +1,32 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# docfun
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+O objetivo do `{docfun}` é rodar um script de simulação no brucutu VI. Recomendado para quem precisar de muita RAM ou quem precisar rodar alguma coisa usando GPU.
+
+```{r eval=FALSE}
+library(docfun)
+
+brucutu_run(
+  script_path = system.file("example/simulacao.R", package = "docfun"),
+  data_path = system.file("example/mtcars.csv", package = "docfun")
+)
+
+```
+
